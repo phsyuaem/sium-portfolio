@@ -5477,7 +5477,7 @@ body,html {
     height: auto; /* Adjust height based on content */
     padding: 20px; /* Add padding inside the dialog box */
     box-sizing: border-box; /* Padding is included in the width and height */
-	display: none;
+	
 }
 
 .resume-body embed {
@@ -5485,14 +5485,14 @@ body,html {
     height: 100%; /* Height relative to the view height minus some padding */
      /* Add some space around the PDF */
      /* Ensure the embed is a block-level element */
-	 display: none;
+	
 }
 
 .resume-explorer .resume-body embed {
     width: 100%; /* Fill the width of the dialog box */
     height: auto; /* Set the height to auto to maintain aspect ratio */
     max-height: 80vh; /* Max-height to ensure it fits in the viewport */
-	display: none;
+	
 }
 
 .desktop .explorer-window .window-body.about-body,.desktop .explorer-window .window-body.contact-body {
