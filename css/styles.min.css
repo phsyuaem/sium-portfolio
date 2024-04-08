@@ -1462,7 +1462,7 @@ body .ui-tooltip {
 	background-position: -160px -96px;
 }
 
-.ui-icon-trash {
+.ui-icon-Resume {
 	background-position: -176px -96px;
 }
 
@@ -2131,7 +2131,7 @@ body .ui-tooltip {
 	content: "";
 }
 
-.fa-trash-o:before {
+.fa-Resume-o:before {
 	content: "";
 }
 
@@ -3891,7 +3891,7 @@ body .ui-tooltip {
 	content: "";
 }
 
-.fa-trash:before {
+.fa-Resume:before {
 	content: "";
 }
 
@@ -5442,8 +5442,8 @@ body,html {
 	background-color: #000;
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
-	padding-left: 5px;
-	border: 1px solid #141414;
+	padding-left: 10px;
+	border: 1px solid #0f0000;
 	border-top: 0;
 }
 
@@ -5451,7 +5451,7 @@ body,html {
 	display: block!important;
 }
 
-.desktop .explorer-window .window-body.trash-body .explorer-icon,.desktop .explorer-window .window-body.trash-body .explorer-icon i {
+.desktop .explorer-window .window-body.Resume-body .explorer-icon,.desktop .explorer-window .window-body.Resume-body .explorer-icon i {
 	cursor: not-allowed;
 }
 
@@ -5464,6 +5464,32 @@ body,html {
 .desktop .explorer-window .window-body.spotify-body iframe {
 	width: 300px;
 	height: 380px;
+}
+
+.resume-explorer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: auto; /* Centers the dialog box on the page */
+    height: auto; /* Adjust height based on content */
+    padding: 20px; /* Add padding inside the dialog box */
+    box-sizing: border-box; /* Padding is included in the width and height */
+}
+
+.resume-body embed {
+    width: 99%; /* 100% width of the dialog box minus some padding */
+    height: 100%; /* Height relative to the view height minus some padding */
+     /* Add some space around the PDF */
+     /* Ensure the embed is a block-level element */
+}
+
+.resume-explorer .resume-body embed {
+    width: 100%; /* Fill the width of the dialog box */
+    height: auto; /* Set the height to auto to maintain aspect ratio */
+    max-height: 80vh; /* Max-height to ensure it fits in the viewport */
 }
 
 .desktop .explorer-window .window-body.about-body,.desktop .explorer-window .window-body.contact-body {
